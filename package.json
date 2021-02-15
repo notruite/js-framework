@@ -1,0 +1,35 @@
+{
+  "name": "js-framework",
+  "version": "1.0.0",
+  "description": "homemade lightweight css framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:scss": "node-sass --output-style compressed -o dist src/scss",
+    "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
+    "css:lint": "stylelint src/scss/*.scss --syntax scss || true",
+    "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
+    "watch:css": "onchange \"src/scss\" -- npm run build:css",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\"",
+    "watch": "run-p serve watch:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notruite/js-framework.git"
+  },
+  "author": "Jordan Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notruite/js-framework/issues"
+  },
+  "homepage": "https://github.com/notruite/js-framework#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "browser-sync": "^2.26.14",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^8.3.1",
+    "stylelint": "^13.10.0"
+  }
+}
