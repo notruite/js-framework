@@ -1,5 +1,9 @@
+@import 'global.scss';
+@import 'grid.scss';
 @import 'variables.scss';
+@import 'utility.scss';
 
-body {
-    color: $primary;
+.cell {
+    background-color: #efefef;
+    border: 1px solid #dedede;
 }
