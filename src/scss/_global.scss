@@ -11,12 +11,12 @@ html {
 }
 
 body {
+  font-family: 'WhitneyNarrSSm-Medium', 'Whitney Narrow SSm Medium', 'Whitney Narrow SSm', sans-serif !important;
+  font-weight: 500;
+  font-size: 12px;
+  color: $text-color;
+  text-rendering: optimizeLegibility;
   line-height: 1;
   margin: 0px;
-  color: black;
-  background: #fff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0px;
+  background: $bg-color;
 }

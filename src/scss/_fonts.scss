@@ -1,0 +1,74 @@
+//FONTS
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-weight: inherit;
+    line-height: 1;
+    margin: 0px;
+    color: $text-color;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+strong {
+    font-family: 'WhitneyNarrSSm-Semibold', 'Whitney Narrow SSm Semibold', 'Whitney Narrow SSm Book', 'Whitney Narrow SSm', sans-serif;
+    font-weight: inherit;
+}
+
+.f-medium {
+    font-family: 'WhitneyNarrSSm-Medium', 'Whitney Narrow SSm Medium', 'Whitney Narrow SSm Book', 'Whitney Narrow SSm', sans-serif;
+    font-weight: inherit;
+}
+
+.f-book {
+    font-family: 'WhitneyNarrSSm-Book', 'Whitney Narrow SSm Book', 'Whitney Narrow SSm Book', 'Whitney Narrow SSm', sans-serif;
+    font-weight: inherit;
+}
+
+p {
+    line-height: 16px !important;
+    margin: 0px !important;
+}
+
+.f-10 {
+    font-size: 10px !important;
+}
+
+.f-11 {
+    font-size: 11px !important;
+}
+
+.f-12 {
+    font-size: 12px !important;
+}
+
+.f-13 {
+    font-size: 13px !important;
+}
+
+.f-14 {
+    font-size: 14px !important;
+}

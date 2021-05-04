@@ -1,0 +1,225 @@
+//BUTTONS
+button {
+    font-size: 12px;
+}
+
+.button {
+    font-family: 'WhitneyNarrSSm-Book', 'Whitney Narrow SSm Book', 'Whitney Narrow SSm Book', 'Whitney Narrow SSm', sans-serif;
+    color: $white-color;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 2px;
+    background-color: $main-color;
+    margin: 0px;
+    padding: 7px;
+    transition: .2s;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    //BASIC BUTTON HOVER
+    &:hover {
+        background-color: $hover-color;
+        color: $white-color;
+    }
+
+    &:active {
+        background-color: $selected-color;
+    }
+
+    &:focus {
+        // outline: 2px solid $focus-color;
+        outline: none;
+    }
+
+
+
+    //BASIC BUTTON OPTIONS
+    &.expanded {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    &.disabled {
+        background-color: $disabled-color;
+        opacity: 1;
+        cursor: not-allowed;
+    }
+
+    &.ghost {
+        color: $main-color;
+        background: transparent;
+        border: 1px solid $main-color;
+
+        //GHOST BUTTON HOVER
+        &:hover, &.hover {
+            background-color: $hover2-color;
+            border-color: $hover2-color;
+            color: $hover-color;
+        }
+
+        &:active {
+            background-color: $selected-color;
+            border-color: $selected-color;
+            color: $white-color;
+        }
+
+        //GHOST BUTTON OPTION
+        &.disabled {
+            background-color: transparent;
+            opacity: 1;
+            color: $disabled-color;
+            border: 1px solid $disabled-color;
+        }
+    }
+
+    &.slim {
+        color: #26415e;
+        background: transparent;
+        border: 1px solid $border-color;
+        padding: 3px 7px;
+
+        //SLIM BUTTON HOVER
+        &:hover {
+            background-color: $hover2-color;
+        }
+
+        &:active {
+            background-color: $hover2-color;
+            color: $main-color;
+        }
+
+        //SLIM BUTTON OPTION
+        &.disabled {
+            background-color: transparent;
+            opacity: 1;
+            color: $disabled-color;
+            border: 1px solid $disabled-color;
+        }
+    }
+}
+
+
+//BUTTON GROUP
+.button-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+
+    &.slim {
+        .button {
+            padding: 3px 7px;
+            min-width: 75px;
+        }
+    }
+
+    .button {
+        margin: 0;
+        margin-bottom: 1px;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        color: $main-color;
+        margin-bottom: 0px;
+
+        border-radius: 0px;
+        min-width: 90px;
+        color: $main-color;
+        background: transparent;
+        border: 1px solid $border-color;
+        margin-right: -1px;
+        
+
+        &:hover {
+            background-color: $hover2-color;
+            color: $hover-color;
+        }
+
+        &:active {
+            background-color: $selected-color;
+            color: $white-color;
+        }
+    }
+
+    .button:first-child {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;    
+    }
+
+    .button.is-active {
+        border-radius: 2px;
+        background-color: $main-color;
+        color: $white-color;
+        border-color: $main-color;
+        z-index: 20;
+
+        &:hover {
+            background-color: $selected-color;
+            border-color: $selected-color;
+        }
+    }
+
+    .button:last-child {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+}
+
+
+
+//LINK
+a {
+    font-family: 'WhitneyNarrSSm-Book', 'Whitney Narrow SSm Book', 'Whitney Narrow SSm Book', 'Whitney Narrow SSm', sans-serif;
+    line-height: inherit;
+    color: $link-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $linkhover-color;
+    }
+
+    &:active {
+        color: $linkpress-color;
+    }
+
+    &.inline {
+        color: $text-color;
+        text-decoration: underline;
+    }
+
+    &.filter {
+        color: $text-color;
+        text-decoration: underline;
+    }
+    &.not-selected {
+        color: $text2-color;
+    }
+
+    &.close-icon {
+        color: $text2-color;
+        transition: .2s;
+        &:hover {
+            color: $text-color;
+        }
+    }
+}

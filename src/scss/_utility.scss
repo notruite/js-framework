@@ -270,3 +270,54 @@
 .padding-b-xl {
   padding-bottom: $xlarge;
 }
+
+
+//BORDERS
+.border-radius {
+  border-radius: 2px;
+}
+
+.border-reset {
+  border: none !important;
+}
+
+.border-r {
+  border-right: 1px solid $border-color;
+}
+
+.border-l {
+  border-left: 1px solid $border-color;
+}
+
+.border-t {
+  border-top: 1px solid $border-color;
+}
+
+.border-b {
+  border-bottom: 1px solid $border-color;
+}
+
+.border-all {
+  border: 1px solid $border-color;
+}
+
+//OTHER
+.z-depth-1 {
+  box-shadow: 0px 0px 12px rgba(38, 65, 94, 0.1);
+}
+
+.z-depth-2 {
+  box-shadow: 0px 0px 36px rgba(38, 65, 94, 0.14);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}

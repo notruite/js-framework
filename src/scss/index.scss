@@ -1,9 +1,21 @@
+@import 'colors.scss';
+@import 'fonts.scss';
 @import 'global.scss';
 @import 'grid.scss';
-@import 'variables.scss';
+
+@import 'buttons.scss';
+@import 'inputs.scss';
+@import 'cards.scss';
+@import 'lists.scss';
+@import 'chiclets.scss';
+@import 'tables.scss';
+@import 'tabs.scss';
+@import 'tags.scss';
+
 @import 'utility.scss';
 
-.cell {
-    background-color: #efefef;
-    border: 1px solid #dedede;
+
+.cell.visible {
+    background-color: $texthelp-color;
+    // border: 1px solid #dedede;
 }

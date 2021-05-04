@@ -2,63 +2,277 @@
 <html lang="de">
 
 <head>
-    <title>Static Website Template</title>
+    <title>ESGC Framework</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="/index.css">
 </head>
 
-<body>
-    <h1>Static Website Template</h1>
+<body class="bg-white">
+    <div class="padding-h padding-t">
+        <h1>ESGC Framework</h1>
+    </div>
     <div class="padding-all-s">
         <div class="grid">
             <div class="row">
-                <div class="cell padding-all-s">1/1</div>
+                <div class="cell visible padding-all-s">1/1</div>
             </div>
             <div class="row">
-                <div class="cell padding-all-s">1/2</div>
-                <div class="cell padding-all-s">1/2</div>
+                <div class="cell visible padding-all-s">1/2</div>
+                <div class="cell visible padding-all-s">1/2</div>
             </div>
             <div class="row">
-                <div class="cell padding-all-s">1/3</div>
-                <div class="cell padding-all-s">1/3</div>
-                <div class="cell padding-all-s">1/3</div>
+                <div class="cell visible padding-all-s">1/3</div>
+                <div class="cell visible padding-all-s">1/3</div>
+                <div class="cell visible padding-all-s">1/3</div>
             </div>
             <div class="row">
-                <div class="cell padding-all-s">1/4</div>
-                <div class="cell padding-all-s">1/4</div>
-                <div class="cell padding-all-s">1/4</div>
-                <div class="cell padding-all-s">1/4</div>
-                <div class="cell padding-all-s">1/4</div>
-                <div class="cell padding-all-s">1/4</div>
-                <div class="cell padding-all-s">1/4</div>
+                <div class="cell visible padding-all-s">1/4</div>
+                <div class="cell visible padding-all-s">1/4</div>
+                <div class="cell visible padding-all-s">1/4</div>
+                <div class="cell visible padding-all-s">1/4</div>
+                <div class="cell visible padding-all-s">1/4</div>
+                <div class="cell visible padding-all-s">1/4</div>
+                <div class="cell visible padding-all-s">1/4</div>
             </div>
             <div class="row">
-                <div class="cell padding-all-s col-1">1/12</div>
-                <div class="cell padding-all-s">11/12</div>
+                <div class="cell visible padding-all-s col-1">1/12</div>
+                <div class="cell visible padding-all-s">11/12</div>
             </div>
             <div class="row">
-                <div class="cell padding-all-s col-2">2/12</div>
-                <div class="cell padding-all-s">10/12</div>
+                <div class="cell visible padding-all-s col-2">2/12</div>
+                <div class="cell visible padding-all-s">10/12</div>
             </div>
             <div class="row">
-                <div class="cell padding-all-s col-3">3/12</div>
-                <div class="cell padding-all-s">9/12</div>
+                <div class="cell visible padding-all-s col-3">3/12</div>
+                <div class="cell visible padding-all-s">9/12</div>
             </div>
             <div class="row">
-                <div class="cell padding-all-s col-4">4/12</div>
-                <div class="cell padding-all-s">8/12</div>
+                <div class="cell visible padding-all-s col-4">4/12</div>
+                <div class="cell visible padding-all-s">8/12</div>
             </div>
             <div class="row">
-                <div class="cell padding-all-s col-5">5/12</div>
-                <div class="cell padding-all-s">7/12</div>
+                <div class="cell visible padding-all-s col-5">5/12</div>
+                <div class="cell visible padding-all-s">7/12</div>
             </div>
             <div class="row">
-                <div class="cell padding-all-s col-6">6/12</div>
-                <div class="cell padding-all-s">6/12</div>
+                <div class="cell visible padding-all-s col-6">6/12</div>
+                <div class="cell visible padding-all-s">6/12</div>
             </div>
         </div>
     </div>
-</body>
 
+
+    <div class="padding-all">
+        <div class="padding-b">
+            <button class="button">CTA Button</button>
+            <button class="button disabled">CTA Button</button>
+        </div>
+        <div class="padding-b">
+            <button class="button ghost">CTA Button</button>
+            <button class="button disabled ghost">CTA Button</button>
+        </div>
+        <div class="padding-b">
+            <button class="button slim">Tertiary Button</button>
+            <button class="button disabled slim">Tertiary Button</button>
+        </div>
+        <div class="padding-b">
+            <div class="button-group">
+                <button class="button is-active">One</button>
+                <button class="button">Two</button>
+                <button class="button">Three</button>
+            </div>
+        </div>
+        <div class="padding-b">
+            <div class="button-group slim">
+                <button class="button is-active">One</button>
+                <button class="button">Two</button>
+            </div>
+        </div>
+        <div class="padding-b">
+            <div class="tag">Energy Transition Strategy</div>
+            <div class="tag hover">Energy Transition Strategy</div>
+            <div class="tag active">Energy Transition Strategy</div>
+        </div>
+        <div class="padding-b">
+            <a>Link Style</a>
+        </div>
+        <div class="padding-b">
+            <a class="inline">Link Inline</a>
+        </div>
+
+
+        <div class="padding-b">
+            <div class="input-group">
+                <div class="input-label">Username</div>
+                <input type="text" placeholder="john@moodys.com">
+            </div>
+        </div>
+        <div class="padding-b">
+            <div class="input-group">
+                <div class="input-label">Username</div>
+                <input class="error" type="text" placeholder="john@moodys.com">
+                <div class="error-label">Please fill out this field</div>
+            </div>
+        </div>
+
+        <div class="padding-b">
+            <div class="input-group filled">
+                <div class="input-label">Username</div>
+                <input type="text" placeholder="john@moodys.com">
+            </div>
+        </div>
+        <div class="padding-b">
+            <div class="input-group filled">
+                <div class="input-label">Username</div>
+                <input class="error" type="text" placeholder="john@moodys.com">
+                <div class="error-label">Please fill out this field</div>
+            </div>
+        </div>
+
+        <div class="padding-b">
+            <div class="card hoverable padding-all z-depth-2 margin-r">
+                <h2 class="padding-b-s"><strong>Europe</strong></h2>
+                <div class="bg-bg border-radius" style="height: 300px; width: 300px;"></div>
+            </div>
+            <div class="card hoverable padding-all hover z-depth-2 margin-r">
+                <h2 class="padding-b-s"><strong>Europe</strong></h2>
+                <div class="bg-bg border-radius" style="height: 300px; width: 300px;"></div>
+            </div>
+            <div class="card hoverable padding-all active z-depth-2">
+                <h2 class="padding-b-s"><strong>Europe</strong></h2>
+                <div class="bg-bg border-radius" style="height: 300px; width: 300px;"></div>
+            </div>
+        </div>
+
+        <div class="padding-b">
+            
+        </div>
+
+        <div class="padding-b">
+            <div class="card z-depth-1 padding-all-s border-all" style="width: 120px;">
+                <ul class="list hoverable">
+                    <li class="list-item border-radius">All Holdings</li>
+                    <li class="list-item border-radius">Option 2</li>
+                    <li class="list-item border-radius">Option 3</li>
+                    <li class="list-item border-radius">Option 4</li>
+                    <li class="list-item border-radius">Option 5</li>
+                </ul>
+            </div>
+        </div>
+        <div class="padding-b">
+            <div class="card z-depth-1 padding-all-s margin-r border-all" style="width: 170px; height: 307px">
+                <ul class="vertical menu">
+                    <li><a class="">Option A</a></li>
+                    <li><a class="">Option B</a></li>
+
+                    <li class="subtitle">Subheader</li>
+                    <li><a class="is-active">Option C</a></li>
+                    <li><a class="">Option D</a></li>
+                    <li><a class="">Option E</a></li>
+                    <li><a class="">Option F</a></li>
+                    <li><a class="">Option G</a></li>
+
+                    <li class="subtitle">Subheader</li>
+                    <li><a class="">Option H</a></li>
+                    <li><a class="">Option I</a></li>
+                </ul>
+            </div>
+            <div class="card z-depth-1 bg-bg border-all" style="width: 250px; height: 320px;">
+                <div class="padding-all-s bg-bg">
+                    <h1><strong>Europe</strong></h1>
+                </div>
+                <div class="padding-h-s padding-b-s ">
+                    <ul class="list separated condensed">
+                        <li class="list-item c-text2 padding-t-xl">Subtitle</li>
+                        <li class="list-item"><a class="inline">Value 1</a></li>
+                        <li class="list-item"><a class="inline">Value 2</a></li>
+                        <li class="list-item"><a class="inline">Value 3</a></li>
+                        <li class="list-item"><a class="inline">Value 4</a></li>
+
+                        <li class="list-item c-text2 padding-t-xl">Subtitle</li>
+                        <li class="list-item"><a class="inline">Value 1</a></li>
+                        <li class="list-item"><a class="inline">Value 2</a></li>
+                        <li class="list-item"><a class="inline">Value 3</a></li>
+                        <li class="list-item"><a class="inline">Value 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding-b">
+            <div class='chiclet-focus'>75.1</div>
+            <div class='chiclet-focus condensed'>75.1</div>
+        </div>
+
+        <div class="padding-b">
+            <table class="minimal">
+                <thead>
+                    <tr>
+                        <th  class="text-right c-text2" colspan="2">Table Header</th>
+                        <th class="text-right c-text2"><strong>Content</strong></th>
+                        <th class="text-right c-text2"><strong>Content</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-right">43</td>
+                        <td class="text-right">21</td>
+                        <td class="text-right">87</td>
+                        <td class="text-right">12</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">43</td>
+                        <td class="text-right">51</td>
+                        <td class="text-right">9</td>
+                        <td class="text-right">543</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="padding-b">
+            <table>
+                <thead>
+                    <tr>
+                        <th  class="text-left c-text2" style="width: 150px;">Header Title</th>
+                        <th class="text-left c-text2" style="width: 150px;"><strong>Header Title</strong></th>
+                        <th class="text-left c-text2" style="width: 150px;"><strong>Header Title</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-left">1.</td>
+                        <td class="text-left">Content Value</td>
+                        <td class="text-left">Content Value</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">2.</td>
+                        <td class="text-left">Content Value</td>
+                        <td class="text-left">Content Value</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        <div class="padding-b">
+
+            <ul class="tabs">
+                <li class="is-active">Largest Holdings</li>
+                <li>March 2021 Laggards</li>
+                <li>March 2021 Leaders</li>
+            </ul>
+          <div class="bg-white z-depth-2 padding-all" style="height: 250px;">
+
+            <ul class="tabs light">
+                <li class="is-active"><strong>Diversified Banks</strong></li>
+                <li><strong>Retail & Specialized Banks</strong></li>
+                <li><strong>Development Banks</strong></li>
+                <li><strong>Specific Purpose Banks</strong></li>
+            </ul>
+
+          </div>
+        </div>
+
+    </div>
+</body>
 </html>

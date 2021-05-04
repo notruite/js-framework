@@ -1,0 +1,146 @@
+//SYSTEM COLOR PALETTE
+$main-color: #26415e;
+$selected-color: #355b85;
+$hover-color: #5379a3;
+$disabled-color: #c1c6cc;
+
+$white-color: #ffff;
+$selected2-color: #D7EDFA;
+$hover2-color: #EBF4FA;
+
+$overlay-color: rgba(38, 65, 94, 0.2);
+
+$border-color: #dce1e6;
+$bg-color: #f5f7f7;
+$bg2-color: #E5F3F2;
+$focus-color: #b2ceed;
+$status-color: #1F8CFF;
+
+$link-color: #a38355;
+$linkpress-color: #806845;
+$linkhover-color: #bd9862;
+
+$error-color: #b31717;
+$success-color: #0f997d;
+$highlight-color: #E5FF7E;
+
+$text-color: #333333;
+$text2-color: #999999;
+$texthelp-color: #b8b8b8;
+
+//DATA COLOR PALETTE
+//MAJOR-NO
+$brown-no-color: #60A96C;
+$brown-minor-color: #A1A158;
+$brown-major-color: #A0794B;
+
+$green-major-color: #60A96C;
+$green-minor-color: #A1A158;
+$green-no-color: #A0794B;
+
+//ADV-WK
+$advanced-color: #229595;
+$robust-color: #5A9772;
+$limited-color: #AF9D3F;
+$weak-color: #DFA124;
+
+//CARBFOOT
+$moderate-color: #F2853D;
+$signifcant-color: #D46335;
+$high-color: #BA4730;
+$intense-color: #A8322C;
+
+//NOFLAG
+$norsk-color: #4FA3CD;
+$lowrsk-color: #8DA3B7;
+$medrsk-color: #A9898E;
+$hirsk-color: #C06960;
+$redflgrsk-color: #DA4930;
+
+//GENRANG-A
+$a-one-color: #f1f6f6;
+$a-two-color: #deebea;
+$a-three-color: #c8dddd;
+$a-four-color: #b6d1d1;
+$a-five-color: #98bfbe;
+$a-six-color: #82b1b0;
+$a-seven-color: #609b9a;
+$a-eight-color: #458b8a;
+$a-nine-color: #1b7170;
+$a-ten-color: #104f4f;
+
+//GENRANG-B
+$b-one-color: #6FA0AD;
+$b-two-color: #81B6C4;
+$b-three-color: #A1C8D3;
+$b-four-color: #C0DBE2;
+$b-five-color: #D7DEE0;
+$b-six-color: #F2CCB0;
+$b-seven-color: #E6B493;
+$b-eight-color: #E19E7C;
+$b-nine-color: #E08163;
+$b-ten-color: #E06E4F;
+
+//GENRANG-C
+$c-one-color: #dbe5a3;
+$c-two-color: #eac550;
+$c-three-color: #e8951c;
+$c-four-color: #dd581d;
+$c-five-color: #d63229;
+
+
+//RESERVED COLORS
+$brandMCO-color: #0028a0;
+$brandMIS-color: #003469;
+$brandMA-color: #00a4d8;
+
+
+$system-palette: (main: $main-color,
+    selected: $selected-color,
+    hover: $hover-color,
+    disabled: $disabled-color,
+
+    white: $white-color,
+    selected2: $selected2-color,
+    hover2: $hover2-color,
+
+    overlay: $overlay-color,
+
+    border: $border-color,
+    bg: $bg-color,
+    bg2: $bg2-color,
+    focus: $focus-color,
+    status: $status-color,
+
+    link: $link-color,
+    linkpress: $linkpress-color,
+    linkhover: $linkhover-color,
+
+    error: $error-color,
+    success: $success-color,
+    highlight: $highlight-color,
+
+    text: $text-color,
+    text2: $text2-color,
+    texthelp: $texthelp-color);
+
+@each $name,
+$color in $system-palette {
+    .bg-#{$name} {
+        background-color: $color !important;
+    }
+}
+
+@each $name,
+$color in $system-palette {
+    .c-#{$name} {
+        color: $color !important;
+    }
+}
+
+@each $name,
+$color in $system-palette {
+    .border-c-#{$name} {
+        border-color: $color;
+    }
+}

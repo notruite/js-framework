@@ -1,0 +1,33 @@
+//CHICLETS
+
+table {
+    border-spacing: 0;
+    thead {
+        background: $bg-color;
+        font-family: 'WhitneyNarrSSm-Semibold', 'Whitney Narrow SSm Semibold', 'Whitney Narrow SSm Book', 'Whitney Narrow SSm', sans-serif;
+            font-weight: inherit;
+        th  {
+            padding: 4px;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+    td {
+        padding: 4px;
+        border-bottom: 1px solid $border-color;
+    }
+
+    &.minimal {
+        border-spacing: 2px;
+        th  {
+            background: $bg-color;
+            border-radius: 2px;
+            border-bottom: none;
+        }
+        td {
+            background: $bg-color;
+            padding: 2px 4px;
+            border-radius: 2px;
+            border-bottom: none;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+//NORMAL LISTS
+ul.list {
+    margin: 0px;
+    padding-inline-start: 0px;
+    li.list-item {
+        list-style-type: none;
+        padding: 10px;
+        line-height: 1;
+        font-size: 12px;
+        cursor: pointer;
+        color: $text-color;
+        &.selected {
+            background: $selected2-color;
+        }
+        &.action {
+            text-decoration: underline;
+        }
+    }
+
+    &.separated {
+        li.list-item {
+            border-bottom: 1px solid $border-color;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    &.hoverable {
+        li.list-item {
+            &:hover, &:focus, &.hover {
+                background: $hover2-color;
+                outline: none;
+            }
+        }
+    }
+
+    &.condensed {
+        li.list-item {
+            padding: 5px;
+        }
+    }
+}
+
+
+
+//NAVIGATION & LISTS
+.vertical.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    line-height: 1.6;
+    li {
+        padding: 0px;
+        font-size: 12px;
+        outline: 0;
+        &.subtitle {
+            color: $text2-color;
+            padding: .3rem;
+            padding-top: 1rem;
+            border-left: 3px solid transparent;
+        }
+        &:hover {
+            background: transparent;
+        }
+
+        > a {
+            border-radius: 2px;
+            color: $main-color;
+            padding: .3rem;
+            border-left: 3px solid transparent;
+            margin-bottom: 0px;
+            line-height: 1.2;
+            text-decoration: none;
+            display: block;
+            &.is-active {
+                background: $selected2-color;
+                border-left: 3px solid $selected-color;
+            }
+            &:hover {
+                background: $hover2-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+//TABS
+
+.tabs {
+    margin: 0;
+    background: $bg-color;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    height: 31px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: pointer;
+    li {
+        float: Left;
+        padding: 8px 16px;
+        line-height: 16px;
+        color: $text2-color;
+        &:hover {
+            color: $main-color;
+        }
+        &.is-active {
+            background: $white-color;
+            color: $main-color;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            // box-shadow: 0px 0px 36px rgba(38, 65, 94, 0.14);
+        }
+    }
+
+    &.light {
+        border-bottom: 1px solid $border-color;
+        background: transparent;
+        li.is-active {
+            background: transparent;
+            height: 15px;
+            border-bottom: 1px solid $main-color;
+        }
+    }
+}
