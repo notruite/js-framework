@@ -1,4 +1,14 @@
 //INPUTS
+
+
+input {
+    min-width: 150px;
+    background: white;
+    padding: 5px 7px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
 .input-group {
     display: inline-block;
     &.expanded {
