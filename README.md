@@ -1,4 +1,4 @@
-# js-framework
+# ordinaire-css
  homemade lightweight css framework
  sole ouput is a css document
  
